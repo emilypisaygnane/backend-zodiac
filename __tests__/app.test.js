@@ -9,7 +9,7 @@ describe('zodiac routes', () => {
       return { id: zodiac.id, name: zodiac.name };
     });
     expect(res.body).toEqual(expected);
-  })
+  });
 
   it('/zodiacs/:id should return zodiac details', async () => {
     const res = await request(app).get('/zodiacs/1');
